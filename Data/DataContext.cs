@@ -14,7 +14,7 @@ namespace EntityFramework.Data
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             base.OnConfiguring(optionsBuilder);
-            optionsBuilder.UseSqlServer("Server=localhost;DataBase=EfProject;Trusted_Connection=false;User Id=SA; Password=Eat2.much;TrustServerCertificate=true");
+            optionsBuilder.UseSqlServer("Server=server;DataBase=EfProject;Trusted_Connection=false;User Id=SA; Password=password;TrustServerCertificate=true");
         }
 
         public DbSet<User> Users { get; set; }
